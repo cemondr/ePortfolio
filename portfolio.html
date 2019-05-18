@@ -17,38 +17,38 @@
 			.navbar-toggler-icon{	
   				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 			}
-
 			.text-warning{
 				text-align: center
 			}
-
 			.pos-f-t{
 
 				padding-top: 18%;
 				background: transparent
 				
 			}
-
 			#leftcontent{
 				padding-top: 25px;
 				color:grey;
-				font-weight: 100
+				font-weight: 100;
 			}
 			.innerbrand{
-				background:transparent
+				backdrop-filter: blur(5px);
 			}
 			#inback{
-				background: transparent /*url("http://www.siue.edu/~mhallor/madisonrobertsphotography1/background.png")*/
-
-
+				z-index: -1;
+				/*background-color:#ffff; */
+				background-size:contain;
+				width:100%;
+				height:100%;
+				position:absolute;
+				overflow: hidden;
+				box-shadow: inset 0 0 0 300px #ffffff1e;
+				filter: blur(10px)
+				/* */
 			}
 			#navbar1{
+				position: relative
 			}
-			
-			/*http://www.siue.edu/~mhallor/madisonrobertsphotography1/background.png */
-
-			/*https://www.elegantthemes.com/blog/wp-content/uploads/2013/09/bg-10-full.jpg */
-
 		</style>
 	</head>
 	<body background="http://www.siue.edu/~mhallor/madisonrobertsphotography1/background.png">
@@ -57,10 +57,16 @@
 		<div class = "container"></div>
 			<div class="pos-f-t">
 				<div class="collapse" id="navbar1">
-						<div class="koko" id = inback>
-						<h4 class="text-warning">Cem Onder</h4>
-						<span class="text-muted">something.</span>
-						</div>
+					<div class="koko" id = inback></div>
+					<h4 class="text-warning">Cem Onder</h4>
+					<span class="text-muted">something. ndfhglfdjgldsf jldfhgl sk gfdkjh jkfdg  khf gfdkjh
+						fksdjfkjds jdf slkjf kljdsj flksd jdsjjjkdsf dslkjfsdkjhgkj klfdjsljf  lfdjs fkjdsaj flkdsaj fldsjf ljdsf lkjsd fj
+						dksfjkdsjhfjkd sajl fjdlksjf lkdsf  kfjdsfjlksdajf lj fdksjf dsl ldjskf kldsjf lksdjf lksdj gldksjf ldskjf ldskj lkdsjf lkdsjfj ldjskfkdfs
+						kfdsjk  dsfjdskljf lk fdslkjf l lsdjflsdkjfl dsk lkdsjf ldksjf l jlfdsjfl sdfj lfdksjaf lkjdslf ldshgl; dsfjdskljfkl
+						jkdhfkjashdf jkhdfjkhds kfkhdfk jhdskjfhdsk ldkjs fjdhsfkj ldhsfkjhdsakjfh dskj fjkdshfkdshfkdsjfh kdjsfhkjds kfkhdfkjk
+						jkfdhsakjfhkjdshfkjdshfkjds 
+						jkdfkdhsfkjhdsjkfhksad
+					</span>
 				</div>
 				<div class = "innerbrand">
 					<nav class="navbar" id = "navbar11">
@@ -73,9 +79,9 @@
 				</div>
 				
 				<div class="collapse" id="navbar2">
-					<div class="bg-dark p-4">
-					<h4 class="text-warning">Cem Onder</h4>
-					<span class="text-muted">Tsomething.</span>
+					<div class="koko">
+						<h4 class="text-warning">Cem Onder</h4>
+						<span class="text-muted">Tsomething.</span>
 					</div>
 				</div>
 				<nav class="navbar">
@@ -86,7 +92,7 @@
 				</nav>
 
 				<div class="collapse" id="navbar3">
-						<div class="bg-dark p-4">
+						<div class="koko">
 						<h4 class="text-warning">Cem Onder</h4>
 						<span class="text-muted">something.</span>
 						</div>
