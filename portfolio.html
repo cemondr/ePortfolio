@@ -104,7 +104,7 @@
 				display:inline-block;
 				width: 200px
 			}
-			.ucsdAvatar{
+			#ucsdAvatar{
 				width: 100px;
 				height: 100px;
 				position: relative;
@@ -112,7 +112,7 @@
 				background-size: contain;
 				background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/4/44/University_of_California%2C_San_Diego_seal.svg/1200px-University_of_California%2C_San_Diego_seal.svg.png");
 			}
-			.psuAvatar{
+			#psuAvatar{
 				width: 100px;
 				height: 100px;
 				position: relative;
@@ -123,16 +123,19 @@
 			.schoolname{
 				font-size:13px;
 			}
-			.BC19{
+			.project{
 				position: relative;
 				text-align: left;
 				z-index:1;
 			}
-			.BC19>*{
+			.project>*{
 				display:inline-block;
 				width: 200px
 			}
-			.BC19Avatar{
+			.projectText{
+				font-size:13px;
+			}
+			#BC19Avatar{
 				width: 100px;
 				height: 100px;
 				position: relative;
@@ -140,19 +143,8 @@
 				background-size: contain;
 				background-image: url("https://battlecode.org/battlecode.png");
 			}
-			.BC19text{
-				font-size:13px;
-			}
-			.FTP{
-				position: relative;
-				text-align: left;
-				z-index:1;
-			}
-			.FTP>*{
-				display:inline-block;
-				width: 200px
-			}
-			.FTPAvatar{
+			
+			#FTPAvatar{
 				width: 100px;
 				height: 100px;
 				position: relative;
@@ -160,19 +152,8 @@
 				background-size: contain;
 				background-image: url("https://is5-ssl.mzstatic.com/image/thumb/Purple125/v4/b5/34/7f/b5347f78-85e5-fefe-253c-b0ded326bb76/Icon.png/1200x630bb.png");
 			}
-			.FTPtext{
-				font-size:13px;
-			}
-			.AS{
-				position: relative;
-				text-align: left;
-				z-index:1;
-			}
-			.AS>*{
-				display:inline-block;
-				width: 200px
-			}
-			.ASAvatar{
+			
+			#ASAvatar{
 				width: 100px;
 				height: 100px;
 				position: relative;
@@ -180,19 +161,8 @@
 				background-size: contain;
 				background-image: url("https://www.sketchappsources.com/resources/source-image/activity-monitor-jardson-almeida.jpg");
 			}
-			.AStext{
-				font-size:13px;
-			}
-			.FMP{
-				position: relative;
-				text-align: left;
-				z-index:1;
-			}
-			.FMP>*{
-				display:inline-block;
-				width: 200px
-			}
-			.FMPAvatar{
+			
+			#FMPAvatar{
 				width: 100px;
 				height: 100px;
 				position: relative;
@@ -200,19 +170,17 @@
 				background-size: contain;
 				background-image: url("https://previews.123rf.com/images/bigbaraboom/bigbaraboom1706/bigbaraboom170600045/80192243-black-shape-of-kitten-with-ball-in-paws-cat-logo-simple-animal-logotype-for-shop-and-vet-clinic-or-h.jpg");
 			}
-			.FMPtext{
-				font-size:13px;
-			}
-			.Aspen{
+
+			.experience{
 				position: relative;
 				text-align: left;
 				z-index:1;
 			}
-			.Aspen>*{
+			.experience>*{
 				display:inline-block;
 				width: 200px
 			}
-			.AspenAvatar{
+			#AspenAvatar{
 				width: 100px;
 				height: 100px;
 				position: relative;
@@ -220,16 +188,8 @@
 				background-size: contain;
 				background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtoOKjkhz4_pSSVGCHIZYFjfcn0XlhzHBZE0AMtYIgnbL59W8OUQ");
 			}
-			.ZC{
-				position: relative;
-				text-align: left;
-				z-index:1;
-			}
-			.ZC>*{
-				display:inline-block;
-				width: 200px
-			}
-			.ZCAvatar{
+			
+			#ZCAvatar{
 				width: 100px;
 				height: 100px;
 				position: relative;
@@ -237,16 +197,8 @@
 				background-size: contain;
 				background-image: url("https://media.licdn.com/dms/image/C4E0BAQFwG5yZq-j3lg/company-logo_200_200/0?e=2159024400&v=beta&t=C0ZetHT_M_BubsJesc-9vE6YYr4vBDWpDXzfMlryQKs");
 			}
-			.UR{
-				position: relative;
-				text-align: left;
-				z-index:1;
-			}
-			.UR>*{
-				display:inline-block;
-				width: 200px
-			}
-			.URAvatar{
+
+			#URAvatar{
 				width: 100px;
 				height: 100px;
 				position: relative;
@@ -296,11 +248,11 @@
 							<div class="navbar-collapse collapse" id="educationNav">
 									<div class="collapsableFrost">
 										<div class="ucsd">
-											<span class="ucsdAvatar"></span>
+											<a href="http://www.cogsci.ucsd.edu/undergraduates/major/index.html" id="ucsdAvatar"></a>
 											<p class = "schoolname">University of California, San Diego <br> Major:Cognitive Science <br> B.S. Awarded in 2015 </p>
 										</div>
 										<div class="ucsd">
-											<span class="psuAvatar"></span>
+												<a href="https://www.pdx.edu/computer-science/master-of-science-in-computer-science" id="psuAvatar"></a>
 											<p class = "schoolname">Portland State University <br> Major:Computer Science<br> Postbacc + MS Awarded in 2020 </p> 
 										</div>
 									</div>
@@ -313,35 +265,34 @@
 					<div class="navbar-collapse collapse" id="projectNav">
 						<ul class="navbar-nav">
 								<div class="collapsableFrost">
-									<div class="BC19">
-										<span class="BC19Avatar"></span>
-										<p class = "BC19text">MIT Battle Code Project (2019)</p>
-										<p class = "BC19text">Participated in the MIT battlecode project. A AI based
+									<div class="project">
+										<a href="https://github.com/cemondr/BC19pdxgroup4" id="BC19Avatar"></a>										
+										<p class = "projectText">MIT Battle Code Project (2019)</p>
+										<p class = "projectText">Participated in the MIT battlecode project. A AI based
 											strategy game, where teams of 3 or 4 create their own robots and strategically instruct them
 											to battle with the robots of hundreds of other robot teams. 
 
 											Our group successfully beat the bots of Quarter Finalists.
 										</p>
 									</div>
-									<div class="FTP">
-										<span class="FTPAvatar"></span>
-										<p class = "FTPtext">FTP Client App (2019)</p>
-										<p class = "FTPtext"> FTP client that succesfully & securely transfers files
+									<div class="project">
+										<a href="https://github.com/BaderAlshaya/CS410-AgileTeam6" id="FTPAvatar"></a>
+										<p class = "projectText">FTP Client App (2019)</p>
+										<p class = "projectText"> FTP client that succesfully & securely transfers files</p>
+									</div>
+									<div class="project">
+										<a href="https://github.com/cemondr/Activity-Monitor-Stats" id="ASAvatar"></a>
+										<p class = "projectText">Activity Monitor App (In Progress)</p>
+										<p class = "projectText"> An applciation that tracks the use of user chosen software
+										and help user to visualize the activity trends. Currently in Progress 
 										</p>
 									</div>
-									<div class="AS">
-										<span class="ASAvatar"></span>
-										<p class = "FMPtext">Activity Monitor App (In Progress)</p>
-										<p class = "FMPtext"> An applciation that tracks the use of user chosen software
-											and help user to visualize the activity trends. Currently in Progress 
-										</p>
-									</div>
-									<div class="FMP">
-										<span class="FMPAvatar"></span>
-										<p class = "FMPtext">Find My Pet App (In Progress)</p>
-										<p class = "FMPtext"> A web applciation that uses Google API that lets users post 
-											about missing pets, and also spotted/seen stray/wandering pets. Users are capable of both reporting
-											and searching for a missing pet with the help of Google Maps.
+									<div class="project">
+										<a href="https://github.com/cemondr/FindMyPet" id="FMPAvatar"></a>
+										<p class = "projectText">Find My Pet App (In Progress)</p>
+										<p class = "projectText"> A web applciation that uses Google API that lets users post 
+										about missing pets, and also spotted/seen stray/wandering pets. Users are capable of both reporting
+										and searching for a missing pet with the help of Google Maps.
 										</p>
 									</div>
 								</div>
@@ -354,18 +305,18 @@
 					</button>
 					<div class="navbar-collapse collapse" id="experienceNav">
 							<div class="collapsableFrost">
-								<div class="Aspen">
-									<span class="AspenAvatar"></span>
+								<div class="experience">
+									<a href="https://www.linkedin.com/company/aspenyapizemin" id="AspenAvatar"></a>
 									<p class = "experienceText">Software Testing Intern @ Aspen<br>May, 2016 - December, 2016 </p>
 									<p class = "experienceText">I tested basic Python code at a Digital Architecture Company </p>
 								</div>
-								<div class="ZC">
-										<span class="ZCAvatar"></span>
+								<div class="experience">
+										<a href="https://www.linkedin.com/company/zerochaos" id="ZCAvatar"></a>
 										<p class = "experienceText">Advertisement Quality Tester @ZeroChaos<br> June,2015-May,2016 </p>
 										<p class = "experienceText"> I tested, evaluated and rated the quality of advertisements that Google puts out for users in Turkey, Greece, United States, Italy and France</p>
 								</div>
-								<div class="UR">
-									<span class="URAvatar"></span>
+								<div class="experience">
+									<a href="http://bci.ucsd.edu/Home.html" id="URAvatar"></a>
 									<p class = "experienceText">Undergraduate Researcher @ UCSD<br> January, 2014- May, 2015 </p>
 									<p class = "experienceText">I have been involved in the data collection and analysis process of several
 											projects that studied the effects of neurofeedback and biofeedback training on
