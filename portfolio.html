@@ -17,102 +17,107 @@
 			.navbar-toggler-icon{	
   				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 			}
-			.text-warning{
-				text-align: center
+			body{
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			width: 100%;
+			height: 100%;
+			font-family: Arial, Helvetica;
+			font-weight: 400;
 			}
-			.pos-f-t{
-
-				padding-top: 18%;
-				background: transparent
-				
-			}
-			#leftcontent{
-				padding-top: 25px;
-				color:grey;
-				font-weight: 100;
-			}
-			.innerbrand{
-				backdrop-filter: blur(5px);
-			}
-			#inback{
-				z-index: -1;
-				/*background-color:#ffff; */
-				background: inherit;
-				width:33%;
-				border: solid rgb(255,255,255) 1px;
-				height:50%;
-				position:absolute;
-				overflow: hidden;
-				box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.425);
-				left: -25px;  
-				top: -25px;  
-
-				filter: blur(20px);
-				filter: opacity(40px)
-				/*http://www.siue.edu/~mhallor/madisonrobertsphotography1/background.png ffffff81*/
-			}
-			#navbar1{
-				position: relative
-			}
+			.frostedGlass{
+			position: relative;
+			width: 250px;
+			height: 350px;
+			top: 50px;
+			left: 40%;
+			background: inherit;
+			border-radius: 2px;
+			overflow: hidden;
 			
+			}
+			.frostedGlass:after{
+			content: '';
+			width: 300px;
+			height: 300px;
+			background: inherit; 
+			position: absolute;
+			right: 0;
+			top: -25px;  
+			bottom: 0;
+			box-shadow: inset 0 0 0 200px rgba(255,255,255,0.05);
+			filter: blur(10px);
+			}
+			.bio{
+			position: relative;
+			margin-top: 50px;
+			text-align: center;
+			z-index: 1;
+			}
+			.bio > *{
+			display: inline-block;
+			width: 200px;
+			}
+			.avatar{
+			width: 100px;
+			height: 100px;
+			position: relative;
+			border-radius: 50%;
+			background-image: url("https://i.ibb.co/VpvhhGZ/0.jpg");
+			}
+			.name{
+				font-size:15px;
+			}
+			.title{
+				font-size:13px;
+			}
+
 		</style>
 	</head>
-	<body background="http://www.siue.edu/~mhallor/madisonrobertsphotography1/background.png">
+	<body background="http://s3.amazonaws.com/wallpapers2/wallpapers/images/000/000/366/original/353.jpg?1487671563">
 
-		
-		<div class = "container"></div>
-			<div class="pos-f-t">
-				<div class="collapse" id="navbar1">
-					<div class="koko" id = inback></div>
-					<h4 class="text-warning">Cem Onder</h4>
-					<span class="text-muted">something. ndfhglfdjgldsf jldfhgl sk gfdkjh jkfdg  khf gfdkjh
-						fksdjfkjds jdf slkjf kljdsj flksd jdsjjjkdsf dslkjfsdkjhgkj klfdjsljf  lfdjs fkjdsaj flkdsaj fldsjf ljdsf lkjsd fj
-						dksfjkdsjhfjkd sajl fjdlksjf lkdsf  kfjdsfjlksdajf lj fdksjf dsl ldjskf kldsjf lksdjf lksdj gldksjf ldskjf ldskj lkdsjf lkdsjfj ldjskfkdfs
-						kfdsjk  dsfjdskljf lk fdslkjf l lsdjflsdkjfl dsk lkdsjf ldksjf l jlfdsjfl sdfj lfdksjaf lkjdslf ldshgl; dsfjdskljfkl
-						jkdhfkjashdf jkhdfjkhds kfkhdfk jhdskjfhdsk ldkjs fjdhsfkj ldhsfkjhdsakjfh dskj fjkdshfkdshfkdsjfh kdjsfhkjds kfkhdfkjk
-						jkfdhsakjfhkjdshfkjdshfkjds 
-						jkdfkdhsfkjhdsjkfhksad
-					</span>
-				</div>
-				<div class = "innerbrand">
-					<nav class="navbar" id = "navbar11">
-							<p class="navbar-text visible-xs-inline-block" id = "leftcontent">Bio</p>
-							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbarToggleExternalContent" aria-expanded="true" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-							</button>
-						
-					</nav>
-				</div>
-				
-				<div class="collapse" id="navbar2">
-					<div class="koko">
-						<h4 class="text-warning">Cem Onder</h4>
-						<span class="text-muted">Tsomething.</span>
-					</div>
-				</div>
-				<nav class="navbar">
-					<p class="navbar-text visible-xs-inline-block" id = "leftcontent">Education</p>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar2" aria-controls="navbarToggleExternalContent" aria-expanded="true" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-					</button>
-				</nav>
-
-				<div class="collapse" id="navbar3">
-						<div class="koko">
-						<h4 class="text-warning">Cem Onder</h4>
-						<span class="text-muted">something.</span>
-						</div>
-					</div>
-					<nav class="navbar">
-						<p class="navbar-text visible-xs-inline-block" id = "leftcontent">Projects</p>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar3" aria-controls="navbarToggleExternalContent" aria-expanded="true" aria-label="Toggle navigation"> 
-						<span class="navbar-toggler-icon"></span>
-						</button>
-					</nav>
-				</div>
+		<!--http://s3.amazonaws.com/wallpapers2/wallpapers/images/000/000/366/original/353.jpg?1487671563-->
+		<div class="frostedGlass">
+			<div class="bio">
+			  <span class="avatar"></span>
+			  <p class = "name">Cem Önder </p>
+			  <p class = "title">Software<br> & <br> QA Engineer</p>
 			</div>
-		<div>
-		
-	</body>
+		</div>
 
+
+		<div class="form-group">
+			<div class="row">
+					<div class = "col-md-4">Education
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#educationNav">
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="navbar-collapse collapse" id="educationNav">
+							 jfdkjsjfds
+							</div>
+						</div>
+				<div class = "col-md-4">Projects
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#projectNav">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="navbar-collapse collapse" id="projectNav">
+						<ul class="navbar-nav">
+							kljflkjdskl
+						</ul>
+					</div>
+				</div>
+				<div class = "col-md-4"> Experience
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#experienceNav">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="navbar-collapse collapse" id="experienceNav">
+						lkjdfskjfkdsj dbfsbfdj  jd  fhjds hjkhs df hd jf skdfhks fjkhs f dskjhf sk fkds fksd fk kjdhf ks fkjhds sssssss
+						 kjsd fjhs khd fkhjs k dkfj  khds f hk dsfkh k kjdsh kkh dshf ksdhfk j khdsf kjshf  kjhs dfkjhds
+						</ul>
+					</div>
+				</div>
+			</div>	
+		</div>	
+	</body>
 </html>
